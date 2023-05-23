@@ -1,22 +1,19 @@
 public class Main {
     public static void main(String[] args) {
         int check = 50;
-        int x = 100;
-        int sum = 500;
+        int cashback = 100;
+        int sum = 1500;
         int result;
         int bonus;
         if (sum >= 1000) {
-            bonus = sum / x;
+            bonus = sum / cashback;
+            result = check + bonus + sum;
         } else {
             bonus = 0;
-        }
-        if (sum >= 1000) {
-            result = check + sum + bonus;
-        } else {
             result = sum + check;
         }
-        System.out.println(result);
-        System.out.println(bonus);
+        System.out.println("Итоговая сумма:" + result);
+        System.out.println("Бонус:" + bonus);
 
         // Объявляете переменные для входных данных и
         // параметров программы: начального счёта,
